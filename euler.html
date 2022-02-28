@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>An elementary proof of Euler&#8217;s product expansion for the sine</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<!-- html --> 
+<meta name="src" content="euler.tex"> 
+<link rel="stylesheet" type="text/css" href="euler.css"> 
+</head><body 
+>
+   <div class="maketitle">
+
+
+
+<h2 class="titleHead">An elementary proof of Euler&#8217;s product expansion
+for the sine</h2>
+            <div class="author" ><span 
+class="cmr-12">Sumit Kumar Jha</span>
+<br />         <span 
+class="cmr-12">IIIT-Hyderabad, India</span>
+<br /><span 
+class="cmr-12">Email: kumarjha.sumit@research.iiit.ac.in</span></div><br />
+<div class="date" ><span 
+class="cmr-12">March 1, 2022</span></div>
+   </div>Euler&#8217;s infinite product for the sine is, for <span 
+class="cmmi-10">x </span><span 
+class="cmsy-10">&#x2208; </span><span 
+class="msbm-10">&#x211D;</span>, the identity
+   <center class="math-display" >
+<img 
+src="euler0x.png" alt="sinx   &#x220F;&#x221E; (     x2 )
+--x- =     1 - j2&#x03C0;2  .
+       j=1  " class="math-display" ></center> In
+the article [1], the author gives an elementary proof of the Euler&#8217;s product expansion
+for the sine using a trigonometric identity and Tannery&#8217;s theorem for infinite
+products. However, the author also makes use of the Wallis&#8217;s product formula. Our
+proof here makes use of only trigonometric identities, and not Wallis&#8217;s product
+formula, which is often, obtained from the Euler&#8217;s product expansion for the
+sine.
+<!--l. 22--><p class="indent" >   We begin with the following identity.
+   <div class="newtheorem">
+<!--l. 23--><p class="noindent" ><span class="head">
+<a 
+ id="x1-2r1"></a>
+<span 
+class="cmbx-10">Theorem 1.</span>  </span><span 
+class="cmti-10">For all complex numbers </span><span 
+class="cmmi-10">z </span><span 
+class="cmti-10">and all integers </span><span 
+class="cmmi-10">n</span><span 
+class="cmti-10">, we have</span>
+   <table 
+class="equation"><tr><td><a 
+ id="x1-3r1"></a>
+
+   <center class="math-display" >
+<img 
+src="euler1x.png" alt="                  (    &#x03C0;)    (   2&#x03C0; )      (    (n - 1)&#x03C0;)
+sin nz = 2n- 1sinz sin  z + n sin  z +-n-  &#x22C5;&#x22C5;&#x22C5;sin  z + ---n---- .
+" class="math-display" ></center></td><td class="equation-label">(1)</td></tr></table>
+<!--l. 27--><p class="nopar" >
+   </div>
+<!--l. 29--><p class="indent" >
+   <div class="proof">
+<!--l. 30--><p class="indent" >   <span class="head">
+<span 
+class="cmti-10">Proof.</span> </span>We can write <div class="eqnarray">
+   <center class="math-display" >
+<img 
+src="euler2x.png" alt="                       eniz - e-niz  e-niz(e2niz - 1)
+               sinnz = -----------= --------------
+                           2-i2i&#x03C0;-          -22i(n-1)i&#x03C0;
+     =  e-niz(e2iz --1)(e2iz --e-n-)&#x22C5;&#x22C5;&#x22C5;(e2iz --e-n---)-
+                     (      2i)      (           )
+           (    &#x03C0;)        2&#x03C0;-            (n---1)&#x03C0;--
+= k &#x22C5;sinz sin z + n  sin  z + n  &#x22C5;&#x22C5;&#x22C5;sin  z +   n
+" class="math-display" ></center>
+</div>where
+   <center class="math-display" >
+<img 
+src="euler3x.png" alt="k = (2i)n-1e-i&#x03C0;n-(1+2&#x22C5;&#x22C5;&#x22C5;+(n-1)) = (2i)n-1e-i&#x03C0;(2n-1) = 2n-1.
+" class="math-display" ></center>                                                                __
+   </div>
+   <div class="newtheorem">
+<!--l. 41--><p class="noindent" ><span class="head">
+<a 
+ id="x1-5r1"></a>
+<span 
+class="cmbx-10">Corollary 1.</span>  </span><span 
+class="cmti-10">For all integers </span><span 
+class="cmmi-10">n</span><span 
+class="cmti-10">, we have</span>
+   <table 
+class="equation"><tr><td><a 
+ id="x1-6r2"></a>
+   <center class="math-display" >
+<img 
+src="euler4x.png" alt="  &#x03C0;-   2&#x03C0;-     (n--1)&#x03C0;-  --n-
+sinn sin n  &#x22C5;&#x22C5;&#x22C5;sin    n    = 2n-1.
+" class="math-display" ></center></td><td class="equation-label">(2)</td></tr></table>
+<!--l. 45--><p class="nopar" >
+   </div>
+<!--l. 47--><p class="indent" >
+   <div class="proof">
+<!--l. 48--><p class="indent" >   <span class="head">
+<span 
+class="cmti-10">Proof.</span> </span>To obtain the result we divide both sides (1) by sin<span 
+class="cmmi-10">z </span>and let <span 
+class="cmmi-10">z </span><span 
+class="cmsy-10">&#x2192; </span>0.   __
+   </div>
+<!--l. 50--><p class="noindent" >Now, letting <span 
+class="cmmi-10">n </span>= 2<span 
+class="cmmi-10">m </span>+ 1 in (1), we get <div class="eqnarray">
+   <center class="math-display" >
+<img 
+src="euler5x.png" alt="                 (      )                  (       )        (          )
+        n-1&#x220F;2m         j&#x03C0;-    n-1    m m&#x220F;         j&#x03C0;-   2&#x220F;m         j&#x03C0;-
+sinnz = 2      sin z + n   = 2   (- 1)    sin  z + n        sin  z + n - &#x03C0;
+           j=0                        j=0            j=m+1       (      )
+                                                n-1    m &#x220F;m          j&#x03C0;-
+                                             = 2   (- 1)     sin  z + n
+                                               m    (   j=-)m   (      )
+                               = (- 1)m2n- 1sinz &#x220F; sin  z + j&#x03C0; sin  z - j&#x03C0;-
+                                               j=1         n          n
+                                                       m (             )
+                                       = (- 1)m2n-1sinz&#x220F;    sin2z - sin2 j&#x03C0;
+                                                      j=1             n
+" class="math-display" ></center>
+</div>Now, from equation (2) we can conclude
+   <center class="math-display" >
+<img 
+src="euler6x.png" alt="m&#x220F;     j&#x03C0;     n
+   sin2-n-= 2n--1
+j=1  " class="math-display" ></center>.
+Using this and replacing <span 
+class="cmmi-10">z </span>by <span 
+class="cmmi-10">z&#x2215;n</span>, we obtain
+   <table 
+class="equation"><tr><td><a 
+ id="x1-8r3"></a>
+   <center class="math-display" >
+<img 
+src="euler7x.png" alt="                (         )
+           z m&#x220F;       sin2 zn
+sinz = nsin n-    1-  sin2 j&#x03C0; .
+             j=1          n
+" class="math-display" ></center></td><td class="equation-label">(3)</td></tr></table>
+<!--l. 62--><p class="nopar" >
+Next, we state and use the Tannery&#8217;s theorem for infinite products
+   <div class="newtheorem">
+<!--l. 64--><p class="noindent" ><span class="head">
+
+<a 
+ id="x1-9r2"></a>
+<span 
+class="cmbx-10">Theorem 2 </span>(Tannery&#8217;s theorem for infinite products, <span 
+class="cmbx-10">[2]</span>)<span 
+class="cmbx-10">.</span>  </span><span 
+class="cmti-10">For   all   natural</span>
+<span 
+class="cmti-10">numbers </span><span 
+class="cmmi-10">n </span><span 
+class="cmsy-10">&#x2208; </span><span 
+class="msbm-10">&#x2115;</span><span 
+class="cmti-10">, let</span>
+   <center class="math-display" >
+<img 
+src="euler8x.png" alt="&#x221E;
+&#x220F;
+  (1 +aj(n))
+j=1
+" class="math-display" ></center> <span 
+class="cmti-10">be a convergent infinte product. If for all </span><span 
+class="cmmi-10">j</span><span 
+class="cmti-10">,</span> lim<sub><span 
+class="cmmi-7">n</span><span 
+class="cmsy-7">&#x2192;&#x221E;</span></sub><span 
+class="cmmi-10">a</span><sub><span 
+class="cmmi-7">j</span></sub>(<span 
+class="cmmi-10">n</span>) = <span 
+class="cmmi-10">a</span><sub><span 
+class="cmmi-7">j</span></sub> <span 
+class="cmti-10">and </span><span 
+class="cmsy-10">|</span><span 
+class="cmmi-10">a</span><sub><span 
+class="cmmi-7">j</span></sub>(<span 
+class="cmmi-10">n</span>)<span 
+class="cmsy-10">|&#x2264; </span><span 
+class="cmmi-10">M</span><sub><span 
+class="cmmi-7">j</span></sub>
+<span 
+class="cmti-10">for all </span><span 
+class="cmmi-10">n</span><span 
+class="cmti-10">, where the series</span> <span 
+class="cmex-10">&#x2211;</span>
+  <span 
+class="cmmi-10">M</span><sub><span 
+class="cmmi-7">j</span></sub> <span 
+class="cmti-10">converges, then</span>
+   <center class="math-display" >
+<img 
+src="euler9x.png" alt="     &#x221E;              &#x221E;
+ lim  &#x220F; (1 +a (n)) = &#x220F; (1+ a ).
+n&#x2192; &#x221E; j=1     j      j=1     j
+" class="math-display" ></center>
+   </div>
+<!--l. 70--><p class="noindent" >Now, let
+   <center class="math-display" >
+<img 
+src="euler10x.png" alt="        - sin2 z
+aj(n) = --2-j&#x03C0;n.
+        sin  n-  " class="math-display" ></center>
+Now, since, for 0 <span 
+class="cmsy-10">&#x2264; </span><span 
+class="cmmi-10">x </span><span 
+class="cmsy-10">&#x2264; </span><span 
+class="cmmi-10">&#x03C0;&#x2215;</span>2,
+
+   <center class="math-display" >
+<img 
+src="euler11x.png" alt="            2
+sinx &#x2265; 1- x- &#x2265; 1 ,
+  x        6   2  " class="math-display" ></center> we
+have, for 1 <span 
+class="cmsy-10">&#x2264; </span><span 
+class="cmmi-10">j </span><span 
+class="cmsy-10">&#x2264; </span><span 
+class="cmmi-10">n&#x2215;</span>2,
+   <center class="math-display" >
+<img 
+src="euler12x.png" alt="    j&#x03C0;   j&#x03C0;
+nsin ---&#x2265; --,
+    n    2  " class="math-display" ></center>
+that is,
+   <center class="math-display" >
+<img 
+src="euler13x.png" alt="    1       4
+-2---2 j&#x03C0; &#x2264;-2-2.
+n sin n    j &#x03C0;  " class="math-display" ></center>
+But, since,
+   <center class="math-display" >
+<img 
+src="euler14x.png" alt="sin2 z&#x2264;  z2&#x2264;  l2.
+    n   n2   n2  " class="math-display" ></center>
+where <span 
+class="cmmi-10">l </span>be the constant <span 
+class="cmmi-10">&#x003E; z </span>for given real <span 
+class="cmmi-10">z</span>. Thus,
+
+   <center class="math-display" >
+<img 
+src="euler15x.png" alt="           2 z     2
+|aj(n)|= sin2-nj&#x03C0;-&#x2264;  4l--.
+        sin  n-   j2&#x03C0;2  " class="math-display" ></center>
+Now, using the Tannery&#8217;s theorem for infinite products, we can write
+   <center class="math-display" >
+<img 
+src="euler16x.png" alt="              (          )            (          )       (        )
+            &#x221E;&#x220F;      -sin2-zn      &#x221E;&#x220F;           sin2 zn     &#x220F;&#x221E;      -z2-
+sinz = znli&#x2192;m&#x221E;     1- sin2 j&#x03C0; = z    lnim&#x2192;&#x221E;  1 - sin2 j&#x03C0;-  = z    1 - j2&#x03C0;2  .
+            j=1          n      j=1              n      j=1
+" class="math-display" ></center>
+   <h3 class="likesectionHead"><a 
+ id="x1-1000"></a>References</h3>
+<!--l. 101--><p class="noindent" >[1] Óscar Ciaurri (2015) Euler&#8217;s Product Expansion for the Sine: An Elementary
+Proof, The American Mathematical Monthly, 122:7, 693-695, DOI:
+10.4169/amer.math.monthly.122.7.693
+<!--l. 102--><p class="noindent" >[2] Paul Loya, Real Analysis 1 notes, Page 322,<br 
+class="newline" />Link: http://people.math.binghamton.edu/dikran/478/Ch6.pdf.  
+</body></html> 
+
+
+
