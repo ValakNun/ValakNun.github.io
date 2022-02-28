@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>A formula for the number of partitions of n</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<!-- html --> 
+<meta name="src" content="partitions.tex"> 
+<link rel="stylesheet" type="text/css" href="partitions.css"> 
+</head><body 
+>
+  <div class="maketitle">
+  <h2 class="titleHead">
+A FORMULA FOR THE NUMBER OF PARTITIONS OF n IN
+TERMS OF THE PARTIAL BELL POLYNOMIALS
+  </h2><div class="authors"><span class="author" >
+<span 
+class="cmr-8">SUMIT KUMAR JHA</span>
+  </span></div>
+         <div class="abstract">
+       <!--l. 42--><p class="noindent" ><span class="title">
+       <span 
+class="cmcsc-10x-x-80">A<span 
+class="small-caps">b</span><span 
+class="small-caps">s</span><span 
+class="small-caps">t</span><span 
+class="small-caps">r</span><span 
+class="small-caps">a</span><span 
+class="small-caps">c</span><span 
+class="small-caps">t</span>.</span> </span><span 
+class="cmr-8">We derive a formula for </span><span 
+class="cmmi-8">p</span><span 
+class="cmr-8">(</span><span 
+class="cmmi-8">n</span><span 
+class="cmr-8">) (the number of partitions of </span><span 
+class="cmmi-8">n</span><span 
+class="cmr-8">) in</span>
+       <span 
+class="cmr-8">terms of the partial Bell polynomials using Fa</span><span 
+class="cmr-8">à di Bruno&#8217;s formula and Euler&#8217;s</span>
+       <span 
+class="cmr-8">pentagonal number theorem.</span></div>
+<div class="submaketitle">
+  <div class="subjclass">
+<!--l. 46--><p class="indent" >  2010 <span 
+class="cmti-10">Mathematics Subject Classification. </span>05A17, 11P81.</div>
+  <div class="keywords">
+<!--l. 46--><p class="indent" >  <span 
+class="cmti-10">Key words and phrases. </span>Integer partitions, Partial Bell polynomials, Pentagonal
+numbers, Faà di Bruno&#8217;s formula, Ramanujan&#8217;s tau function.</div></div></div>
+  <h3 class="sectionHead"><span class="titlemark">1. </span> <a 
+ id="x1-10001"></a>Main result</h3>
+<!--l. 49--><p class="noindent" >Recall the classical partition function, denoted by <span 
+class="cmmi-10">p</span>(<span 
+class="cmmi-10">n</span>), gives the number of ways of
+writing the integer <span 
+class="cmmi-10">n </span>as a sum of positive integers, where the order of summands is not
+considered significant. For example, <span 
+class="cmmi-10">p</span>(4) = 5, since there are 5 ways to represent 4 as
+sum of positive integers, namely, 4 = 3 + 1 = 2 + 2 = 2 + 1 + 1 = 1 + 1 + 1 + 1.
+<!--l. 51--><p class="indent" >  We also recall another classical statistic, the (<span 
+class="cmmi-10">n,k</span>)<span 
+class="cmti-10">th partial Bell polynomial </span>in the
+variables <span 
+class="cmmi-10">x</span><sub><span 
+class="cmr-7">1</span></sub><span 
+class="cmmi-10">,x</span><sub><span 
+class="cmr-7">2</span></sub><span 
+class="cmmi-10">,</span><span 
+class="cmmi-10">&#x2026;</span><span 
+class="cmmi-10">,x</span><sub><span 
+class="cmmi-7">n</span><span 
+class="cmsy-7">-</span><span 
+class="cmmi-7">k</span><span 
+class="cmr-7">+1</span></sub>, denoted by <span 
+class="cmmi-10">B</span><sub><span 
+class="cmmi-7">n,k</span></sub> <span 
+class="cmsy-10">&#x2261;</span> B<sub><span 
+class="cmmi-7">n,k</span></sub>(<span 
+class="cmmi-10">x</span><sub><span 
+class="cmr-7">1</span></sub><span 
+class="cmmi-10">,x</span><sub><span 
+class="cmr-7">2</span></sub><span 
+class="cmmi-10">,</span><span 
+class="cmmi-10">&#x2026;</span><span 
+class="cmmi-10">,x</span><sub><span 
+class="cmmi-7">n</span><span 
+class="cmsy-7">-</span><span 
+class="cmmi-7">k</span><span 
+class="cmr-7">+1</span></sub>) (<span class="cite">[<a 
+href="#XComtet">1</a>, p. 134]</span>, <span class="cite">[<a 
+href="#XAndrews">5</a>, Ch.
+12]</span>), defined by
+  <table 
+class="equation-star"><tr><td>
+  <center class="math-display" >
+<img 
+src="partitions0x.png" alt="                         &#x2211;         n!    n-&#x220F;k+1(xi)&#x2113;i
+Bn,k(x1,x2,...,xn-k+1) =         &#x220F;n--k+1---      -i!   .
+                       1&#x2264;&#x2211;in&#x2264;n,i&#x2113;&#x2113;i&#x2208;=&#x2115;n  i=1   &#x2113;i! i=1
+                       &#x2211;in=i=11&#x2113;ii=k
+" class="math-display" ></center></td></tr></table>
+<!--l. 54--><p class="nopar" >
+Cvijovi&#263; <span class="cite">[<a 
+href="#XBell">3</a>]</span> gives the following formula for calculating these polynomials <div class="eqnarray">
+  <center class="math-display" >
+<img 
+src="partitions1x.png" alt="                                              k
+                   n-1  &#x03B1;1-1   &#x03B1;k-1-1&#x25DC;(---)(--)&#x25DE;&#x25DF;--(----)&#x25DD;
+   Bn,k+1 = --1----&#x2211;    &#x2211;    &#x22C5;&#x22C5;&#x22C5;  &#x2211;     n   &#x03B1;1  &#x22C5;&#x22C5;&#x22C5; &#x03B1;k-1  &#x00D7; &#x22C5;&#x22C5;&#x22C5;
+            (k + 1)!&#x03B1;1=k &#x03B1;2=k-1   &#x03B1;k=1   &#x03B1;1  &#x03B1;2       &#x03B1;k
+                  &#x25DF;--------&#x25DD;&#x25DC;-------&#x25DE;
+                           k
+(1)          &#x00D7;xn-&#x03B1;1x&#x03B1;1-&#x03B1;2 &#x22C5;&#x22C5;&#x22C5;x&#x03B1;k-1-&#x03B1;kx&#x03B1;k   (n &#x2265; k+ 1,k = 1,2,...)
+" class="math-display" ><a 
+ id="x1-1001r1"></a></center>
+</div>We prove the following here.
+  <div class="newtheorem">
+<!--l. 63--><p class="noindent" ><span class="head">
+<a 
+ id="x1-1002r1"></a>
+<span 
+class="cmbx-10">Theorem 1.</span>  </span><span 
+class="cmti-10">We have</span>
+  <table 
+class="equation"><tr><td><a 
+ id="x1-1003r2"></a>
+  <center class="math-display" >
+<img 
+src="partitions2x.png" alt="         &#x2211;n
+p(n) =-1   (- 1)kk!Bn,k(&#x03BB;1,&#x03BB;2,&#x22C5;&#x22C5;&#x22C5;,&#x03BB;n- k+1)
+      n! k=0
+" class="math-display" ></center></td><td class="equation-label">(2)</td></tr></table>
+
+<!--l. 68--><p class="nopar" >
+<span 
+class="cmti-10">where</span>
+  <table 
+class="equation"><tr><td><a 
+ id="x1-1004r3"></a>
+  <center class="math-display" >
+<img 
+src="partitions3x.png" alt="     (      &#x221A;-----        &#x221A;-----
+     |{ (- 1)1+-1+624m-m!  if 1+-1+24m &#x2208; &#x2124;,
+&#x03BB;  =       1-&#x221A;1+624m-      1-&#x221A;16+24m
+ m   |( (- 1)       m!  if     6    &#x2208; &#x2124;,
+       0              otherwise.
+" class="math-display" ></center></td><td class="equation-label">(3)</td></tr></table>
+<!--l. 79--><p class="nopar" >
+  </div>
+  <div class="proof">
+<!--l. 82--><p class="indent" >  <span class="head">
+<span 
+class="cmti-10">Proof.</span> </span>We begin by the following generating function <span class="cite">[<a 
+href="#XFine">2</a>, Equation 22.13]</span>
+  <table 
+class="equation"><tr><td><a 
+ id="x1-1005r4"></a>
+  <center class="math-display" >
+<img 
+src="partitions4x.png" alt="&#x2211;          &#x220F;&#x221E;
+   p(n)qn =   --1--j.
+n&#x2265;0        j=11 - q
+" class="math-display" ></center></td><td class="equation-label">(4)</td></tr></table>
+<!--l. 85--><p class="nopar" >
+We recall the Euler&#8217;s pentagonal number theorem <span class="cite">[<a 
+href="#XFine">2</a>, Equation 7.8]</span> <div class="eqnarray">
+
+  <center class="math-display" >
+<img 
+src="partitions5x.png" alt="                           &#x221E;            &#x221E;
+(5)                  E(q) := &#x220F; (1 - qj) =  &#x2211;  (- 1)nq3n22+n
+                           j=1         n= -&#x221E;
+                    2   5   7   12   15   22   26
+          = 1 - q- q + q + q - q  - q  + q  + q  - &#x22C5;&#x22C5;&#x22C5;.
+" class="math-display" ><a 
+ id="x1-1006r5"></a></center>
+</div>Let <span 
+class="cmmi-10">f</span>(<span 
+class="cmmi-10">q</span>) = 1<span 
+class="cmmi-10">&#x2215;q</span>. Using Faà di Bruno&#8217;s formula (<span class="cite">[<a 
+href="#XComtet">1</a>, p. 137]</span>, <span class="cite">[<a 
+href="#XAndrews">5</a>, Ch. 12]</span>) we have
+  <table 
+class="equation"><tr><td><a 
+ id="x1-1007r6"></a>
+  <center class="math-display" >
+<img 
+src="partitions6x.png" alt="dn          &#x2211;n  (k)          (  &#x2032;    &#x2032;&#x2032;        (n-k+1)  )
+dqnf(E(q)) =   f  (E(q))&#x22C5;Bn,k E (q),E (q),...,E      (q) .
+            k=0
+" class="math-display" ></center></td><td class="equation-label">(6)</td></tr></table>
+<!--l. 96--><p class="nopar" >
+Since <span 
+class="cmmi-10">f</span><sup><span 
+class="cmr-7">(</span><span 
+class="cmmi-7">k</span><span 
+class="cmr-7">)</span></sup>(<span 
+class="cmmi-10">q</span>) = <img 
+src="partitions7x.png" alt="   k
+(-1qk)+1k!-"  class="frac" align="middle"> and <span 
+class="cmmi-10">E</span>(0) = 1, letting <span 
+class="cmmi-10">q </span><span 
+class="cmsy-10">&#x2192; </span>0 in the above equation gives
+  <center class="math-display" >
+<img 
+src="partitions8x.png" alt="        n            (                         )
+p(n)n! = &#x2211; (- 1)kk!B   E&#x2032;(0),E &#x2032;&#x2032;(0),...,E (n- k+1)(0) .
+       k=0        n,k  " class="math-display" ></center>
+Then Euler&#8217;s pentagonal number theorem (<a 
+href="#x1-1006r5">5<!--tex4ht:ref: pent --></a>) gives us
+
+  <center class="math-display" >
+<img 
+src="partitions9x.png" alt="E (m )(0) = &#x03BB;m  " class="math-display" ></center>
+where <span 
+class="cmmi-10">&#x03BB;</span><sub><span 
+class="cmmi-7">m</span></sub> is as defined in (<a 
+href="#x1-1004r3">3<!--tex4ht:ref: lamb --></a>). <span class="qed"><span 
+class="msam-10">&#x25A1;</span></span>
+  </div>
+<!--l. 107--><p class="indent" >  Combining equations (<a 
+href="#x1-1001r1">1<!--tex4ht:ref: explicitio --></a>) and (<a 
+href="#x1-1003r2">2<!--tex4ht:ref: explicit2 --></a>) we can conclude that
+  <center class="math-display" >
+<img 
+src="partitions10x.png" alt="            n&#x2211;-1       n&#x2211;-1  &#x03B1;1&#x2211;-1    &#x03B1;k-&#x2211; 1-1
+p(n) = - &#x03B8;n +   (- 1)k- 1          &#x22C5;&#x22C5;&#x22C5;      &#x03B8;n- &#x03B1;1&#x03B8;&#x03B1;1-&#x03B1;2 &#x22C5;&#x22C5;&#x22C5;&#x03B8;&#x03B1;k- 1-&#x03B1;k&#x03B8;&#x03B1;k
+            k=1       &#x03B1;&#x25DF;1=k&#x03B1;2=k-&#x25DD;1&#x25DC;----&#x03B1;k=1&#x25DE;
+                               k  " class="math-display" ></center>
+where
+  <table 
+class="equation-star"><tr><td>
+  <center class="math-display" >
+<img 
+src="partitions11x.png" alt="     (     1+&#x221A;1+24m-    1+-&#x221A;1+24m-
+     |{(- 1)1-&#x221A;16+24m-  if   &#x221A;6----&#x2208; &#x2124;,
+&#x03B8;m = |(- 1)---6---  if 1---16+24m-&#x2208; &#x2124;,
+     (0             otherwise.
+" class="math-display" ></center></td></tr></table>
+<!--l. 119--><p class="nopar" >
+  <div class="newtheorem">
+<!--l. 120--><p class="noindent" ><span class="head">
+<a 
+ id="x1-1008r1"></a>
+
+<span 
+class="cmbx-10">Corollary 1.</span>  </span><span 
+class="cmti-10">Let</span>
+  <center class="math-display" >
+<img 
+src="partitions12x.png" alt="        &#x220F;&#x221E;           &#x221E;&#x2211;
+E (q)r :=   (1 - qj)r =    pr(n)qn
+        j=1          n=0
+" class="math-display" ></center> <span 
+class="cmti-10">with </span><span 
+class="cmmi-10">p</span><sub><span 
+class="cmmi-7">r</span></sub>(0) = 1 <span 
+class="cmti-10">(see </span><span class="cite">[<a 
+href="#XAtkin">4</a>]</span><span 
+class="cmti-10">). Then</span>
+  <center class="math-display" >
+<img 
+src="partitions13x.png" alt="      &#x2211;n      (     )
+p(n) =   (- 1)r n + 1 pr(n),
+      r=0      r + 1  " class="math-display" ></center>
+<span 
+class="cmti-10">where by the virtue of the Fa</span><span 
+class="cmti-10">à di Bruno&#8217;s formula</span> (<a 
+href="#x1-1007r6">6<!--tex4ht:ref: faa --></a>) <span 
+class="cmti-10">with </span><span 
+class="cmmi-10">f</span>(<span 
+class="cmmi-10">q</span>) = <span 
+class="cmmi-10">q</span><sup><span 
+class="cmmi-7">l</span></sup> <span 
+class="cmti-10">we have</span>
+<div class="eqnarray">
+  <center class="math-display" >
+<img 
+src="partitions14x.png" alt="           &#x2211;    ()
+pl(n) =  1n!  lk=0  lkk!Bn,k(&#x03BB;1,...,&#x03BB;n-k+1).
+" class="math-display" ></center>
+</div>
+  </div>
+  <div class="proof">
+<!--l. 131--><p class="indent" >  <span class="head">
+
+<span 
+class="cmti-10">Proof.</span> </span>We start with the generating function for the partial Bell polynomials <span class="cite">[<a 
+href="#XComtet">1</a>,
+Equation (3a&#8217;) on p. 133]</span> as follows <div class="eqnarray">
+  <center class="math-display" >
+<img 
+src="partitions15x.png" alt="                            (        ) k
+&#x2211;&#x221E;                   qn    1  &#x2211;&#x221E;   qj
+   Bn,k(&#x03BB;1,...,&#x03BB;n-k+1)n! = k!(    &#x03BB;jj!)
+n=k                           j=1
+                          =  1(E (q) - 1)k
+                             k!
+                    1 &#x2211;k       (k )
+                  = k!   (- 1)k- r r E (q)r
+                      r=0
+               1 &#x2211;k    k- r(k ) &#x221E;&#x2211;       n
+            =  k!   (- 1)    r     pr(n)q
+                 r=0           n=0
+" class="math-display" ></center>
+</div>to conclude that
+  <center class="math-display" >
+<img 
+src="partitions16x.png" alt="                      &#x2211;k        ( )
+Bn,k(&#x03BB;1,...,&#x03BB;n- k+1) = n!   (- 1)k-r k pr(n).
+                    k!r=0        r  " class="math-display" ></center> The
+above equation, together with the formula (<a 
+href="#x1-1003r2">2<!--tex4ht:ref: explicit2 --></a>), gives us <div class="eqnarray">
+  <center class="math-display" >
+<img 
+src="partitions17x.png" alt="      &#x2211;n &#x2211;k     (  )
+p(n ) =      (- 1)r k pr(n)
+      k=0r=0      r
+     &#x2211;n           &#x2211;n (k)
+   =    (- 1)rpr(n)
+      r=0          k=r r
+     &#x2211;n     r(n + 1)
+   =    (- 1)  r+ 1  pr(n).
+     r=0
+" class="math-display" ></center>
+</div><span class="qed"><span 
+class="msam-10">&#x25A1;</span></span>
+  </div>
+  <div class="newtheorem">
+<!--l. 150--><p class="noindent" ><span class="head">
+<a 
+ id="x1-1012r1"></a>
+<span 
+class="cmbx-10">Remark 1.</span>  </span><span 
+class="cmti-10">Note that similar ideas are used in </span><span class="cite">[<a 
+href="#XOno-etc">6</a>]</span> <span 
+class="cmti-10">with relation to partition zeta</span>
+<span 
+class="cmti-10">functions.</span>
+  </div>
+  <h3 class="sectionHead"><a 
+ id="x1-20001"></a>References</h3>
+<!--l. 153--><p class="noindent" >
+   <div class="thebibliography">
+   <p class="bibitem" ><span class="biblabel">
+ <span 
+class="cmr-8">[1]</span> <span class="bibsp"><span 
+class="cmr-8">&#x00A0;</span><span 
+class="cmr-8">&#x00A0;</span><span 
+class="cmr-8">&#x00A0;</span></span></span><a 
+ id="XComtet"></a><span 
+class="cmr-8">L. Comtet, </span><span 
+class="cmti-8">Advanced Combinatorics: The Art of Finite and Infinite Expansions</span><span 
+class="cmr-8">, D. Reidel</span>
+   <span 
+class="cmr-8">Publishing Co., Dordrecht, 1974.</span>
+   </p>
+   <p class="bibitem" ><span class="biblabel">
+ <span 
+class="cmr-8">[2]</span> <span class="bibsp"><span 
+class="cmr-8">&#x00A0;</span><span 
+class="cmr-8">&#x00A0;</span><span 
+class="cmr-8">&#x00A0;</span></span></span><a 
+ id="XFine"></a><span 
+class="cmr-8">N. J. Fine, </span><span 
+class="cmti-8">Basic Hypergeometric Series and Applications</span><span 
+class="cmr-8">, American Mathematical Soc.,</span>
+   <span 
+class="cmr-8">1988.</span>
+   </p>
+   <p class="bibitem" ><span class="biblabel">
+ <span 
+class="cmr-8">[3]</span> <span class="bibsp"><span 
+class="cmr-8">&#x00A0;</span><span 
+class="cmr-8">&#x00A0;</span><span 
+class="cmr-8">&#x00A0;</span></span></span><a 
+ id="XBell"></a><span 
+class="cmr-8">D. Cvijovi</span><span 
+class="cmr-8">&#263;, New identities for the partial Bell polynomials, Applied mathematics letters,</span>
+   <span 
+class="cmbx-8">24 </span><span 
+class="cmr-8">(2011), 1544&#8211;1547.</span>
+   </p>
+   <p class="bibitem" ><span class="biblabel">
+ <span 
+class="cmr-8">[4]</span> <span class="bibsp"><span 
+class="cmr-8">&#x00A0;</span><span 
+class="cmr-8">&#x00A0;</span><span 
+class="cmr-8">&#x00A0;</span></span></span><a 
+ id="XAtkin"></a><span 
+class="cmr-8">A. D. Forbes, Congruence properties of functions related to the partition function, </span><span 
+class="cmti-8">Pacific</span>
+   <span 
+class="cmti-8">J. Math. </span><span 
+class="cmbx-8">158 </span><span 
+class="cmr-8">(1993), 145&#8211;156.</span>
+   </p>
+   <p class="bibitem" ><span class="biblabel">
+ <span 
+class="cmr-8">[5]</span> <span class="bibsp"><span 
+class="cmr-8">&#x00A0;</span><span 
+class="cmr-8">&#x00A0;</span><span 
+class="cmr-8">&#x00A0;</span></span></span><a 
+ id="XAndrews"></a><span 
+class="cmr-8">G. E. Andrews, </span><span 
+class="cmti-8">The Theory of Partitions</span><span 
+class="cmr-8">, Cambridge University Press, 1988.</span>
+   </p>
+   <p class="bibitem" ><span class="biblabel">
+ <span 
+class="cmr-8">[6]</span> <span class="bibsp"><span 
+class="cmr-8">&#x00A0;</span><span 
+class="cmr-8">&#x00A0;</span><span 
+class="cmr-8">&#x00A0;</span></span></span><a 
+ id="XOno-etc"></a><span 
+class="cmr-8">K. Ono, L. Rolen, R. Schneider, Explorations in the Theory of Partition Zeta Functions,</span>
+   <span 
+class="cmr-8">In: </span><span 
+class="cmti-8">Exploring the Riemann Zeta Function</span><span 
+class="cmr-8">. Springer, Cham, 2017.</span></p></div>
+  <div class="addresses">
+<!--l. 167--><p class="indent" >  <span class="address-title"></span><span class="address"><span 
+class="cmcsc-10x-x-80">I<span 
+class="small-caps">n</span><span 
+class="small-caps">t</span><span 
+class="small-caps">e</span><span 
+class="small-caps">r</span><span 
+class="small-caps">n</span><span 
+class="small-caps">a</span><span 
+class="small-caps">t</span><span 
+class="small-caps">i</span><span 
+class="small-caps">o</span><span 
+class="small-caps">n</span><span 
+class="small-caps">a</span><span 
+class="small-caps">l</span> I<span 
+class="small-caps">n</span><span 
+class="small-caps">s</span><span 
+class="small-caps">t</span><span 
+class="small-caps">i</span><span 
+class="small-caps">t</span><span 
+class="small-caps">u</span><span 
+class="small-caps">t</span><span 
+class="small-caps">e</span> <span 
+class="small-caps">o</span><span 
+class="small-caps">f</span> I<span 
+class="small-caps">n</span><span 
+class="small-caps">f</span><span 
+class="small-caps">o</span><span 
+class="small-caps">r</span><span 
+class="small-caps">m</span><span 
+class="small-caps">a</span><span 
+class="small-caps">t</span><span 
+class="small-caps">i</span><span 
+class="small-caps">o</span><span 
+class="small-caps">n</span> T<span 
+class="small-caps">e</span><span 
+class="small-caps">c</span><span 
+class="small-caps">h</span><span 
+class="small-caps">n</span><span 
+class="small-caps">o</span><span 
+class="small-caps">l</span><span 
+class="small-caps">o</span><span 
+class="small-caps">g</span><span 
+class="small-caps">y</span>, H<span 
+class="small-caps">y</span><span 
+class="small-caps">d</span><span 
+class="small-caps">e</span><span 
+class="small-caps">r</span><span 
+class="small-caps">a</span><span 
+class="small-caps">b</span><span 
+class="small-caps">a</span><span 
+class="small-caps">d</span>-500032, I<span 
+class="small-caps">n</span><span 
+class="small-caps">d</span><span 
+class="small-caps">i</span><span 
+class="small-caps">a</span></span></span>
+
+<!--l. 167--><p class="indent" >  <span class="email-title">    <span 
+class="cmti-8">Email address</span><span 
+class="cmr-8">: </span></span><span class="email"><span 
+class="cmtt-8">kumarjha.sumit@research.iiit.ac.in</span></span>
+  </div> 
+</body></html> 
+
+
+
